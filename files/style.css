@@ -314,13 +314,19 @@ body {
 }
 
 /*========================Timeline====================*/
+
 .timeline{
     position: relative;
-    max-width: 1200px;
-    margin: 100px auto;
+    width: 48%;
+    margin: 50px 1%;
+}
+.timeline-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .containerTline{
-    padding: 10px 50px;
+    padding: 10px 30px;
     position: relative;
     width: 50%;
     animation: movedown 1s linear forwards;
@@ -351,12 +357,14 @@ body {
 }
 
 .text-box{
-    padding: 20px 30px;
+    padding: 20px;
     background-color: #fff;
-    color: #000; 
+    color: #000;
     position: relative;
     border-radius: 6px;
     font-size: 15px;
+    min-width: 100px;
+    max-width: 300px;
 }
 .left-container{
     left: 0;
@@ -375,7 +383,7 @@ body {
 .right-container img{
     left: -20px;
 }
-.timeline::after{
+.academics::after{
     content: '';
     position: absolute;
     width: 6px;
@@ -387,7 +395,18 @@ body {
     background-color: #fff;
     animation: moveline 3s linear forwards;
 }
-
+.internships::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    background-color: #fff;
+    animation: moveline 3s linear forwards;
+}
 @keyframes moveline {
     0%{
         height: 0;
