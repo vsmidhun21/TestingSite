@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: 'Agustina';
+    src: url('../Agustina.woff') format('woff');
+}
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +25,7 @@ body {
 }
 
 /*navbar*/
-
+/* General Styles */
 .header {
     position: fixed;
     top: 0;
@@ -30,25 +33,35 @@ body {
     width: 100%;
     padding: 20px 10%;
     background: hsl(228, 15%, 20%);
-    /*backdrop-filter: blur(25px);*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    overflow: hidden;
     box-shadow: 0 .1rem 1rem #000;
 }
 
 .logo {
-    position: relative;
-    font-size: 25px;
+    font-family: 'Agustina', 'Rubik', sans-serif;
+    font-size: 1.2rem;
     color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: default;
-    letter-spacing: 5px;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
+    font-weight: 1000;
+    letter-spacing: 1px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
 }
 
 .navbar a {
@@ -56,12 +69,10 @@ body {
     font-size: 25px;
     color: #fff;
     text-decoration: none;
+    font-family: 'Rubik', sans-serif;
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
-    opacity: 0;
-    animation: slideUP .5s ease forwards;
-    animation-delay: calc(.2s * var(--i));
 }
 
 .navbar a:hover {
@@ -69,10 +80,11 @@ body {
     text-decoration: underline;
 }
 
-.navbar .active{
+.navbar .active {
     color: #0ef;
     text-decoration: underline;
 }
+
 /*home*/
 
 .home {
@@ -816,28 +828,28 @@ body {
 /*===================================Responsive My Phone===============*/
 
 @media (max-width: 900px) and (min-width: 700px) {
-    .header{
-        display:block;
+    .menu-icon {
+        display: block;
     }
-    .logo {
-        position: relative;
-        font-size: 30px;
-        font-weight: 500;
-        text-align: center;
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: hsl(228, 15%, 20%);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        box-shadow: 0 .1rem 1rem #000;
+        padding: 20px 0;
     }
-    .logo::after{
-        content: "\a";
-        white-space: pre;
+
+    .menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
     }
+
     .navbar a {
-        font-size: 25px;
-        font-weight: 200;
-        margin-left: 0px;
-        padding: 10px 10px 0 0;
-    }
-    .navbar a::after{
-        content: "\a";
-        white-space: pre;
+        margin: 15px 0;
     }
     /*================timeline responsive====*/
     .timeline{
@@ -871,34 +883,30 @@ body {
 }
 /*=============================Responsive Small phone==============*/
 @media (max-width: 700px) and (min-width: 375px) {
-    *{
-        overflow-x: hidden;
-        overflow-y: inherit;
-    }
+    
     /*===============navbar============*/
-    .header{
-        display:block;
-        
+    .menu-icon {
+        display: block;
     }
-    .logo {
-        position: relative;
-        font-size: 20px;
-        font-weight: 500;
-        text-align: center;
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: hsl(228, 15%, 20%);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        box-shadow: 0 .1rem 1rem #000;
+        padding: 20px 0;
     }
-    .logo::after{
-        content: "\a";
-        white-space: pre;
+
+    .menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
     }
+
     .navbar a {
-        font-size: 15px;
-        font-weight: 200;
-        margin-left: 0px;
-        padding: 10px 10px 0 0;
-    }
-    .navbar a::after{
-        content: "\a";
-        white-space: pre;
+        margin: 15px 0;
     }
 
     /*================home===============*/
@@ -1056,31 +1064,29 @@ body {
 }
 
 @media (max-width: 375px) {
-    *{
-        overflow-x: hidden;
+    
+    .menu-icon {
+        display: block;
     }
-    .header{
-        display:block;
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: hsl(228, 15%, 20%);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        box-shadow: 0 .1rem 1rem #000;
+        padding: 20px 0;
     }
-    .logo {
-        position: relative;
-        font-size: 20px;
-        font-weight: 500;
-        text-align: center;
+
+    .menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
     }
-    .logo::after{
-        content: "\a";
-        white-space: pre;
-    }
+
     .navbar a {
-        font-size: 13px;
-        font-weight: 200;
-        margin-left: 0px;
-        padding: 10px 4px 0 0;
-    }
-    .navbar a::after{
-        content: "\a";
-        white-space: pre;
+        margin: 15px 0;
     }
 
     /*home*/
