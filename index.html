@@ -242,125 +242,202 @@
 
         <!--Projects-->
         <section id="Projects">
-            <div id="portfolio" class="services">
-                <div class="main-text reveal" id="serv">
-                    <h2>My <span>Projects</span></h2>
-                    <center>
-
-                    <!--cards -->
-                    <div class="card reveal">
-                        <div class="image">
-                            <img src="./img/DD.jpg">
-                        </div>
-                        <div class="title">
-                            <h1>Drowsiness Detection</h1>
-                        </div>
-                        <div class="des">
-                            <p>The face of the driver is captured and eye is detected by OpenCV, Python. If eye is closed alarm rings.</p>
-                            <div class="tech">
-                                <img alt="Python logo" class="skill-icon" src="./img/logos/python.png"/>
-                                <span>
-                                Python
-                                </span>
-                            </div>
-                            <div class="tech">
-                                <img alt="Python logo" class="skill-icon" src="./img/logos/opencv.png"/>
-                                <span>
-                                OpenCV
-                                </span>
-                            </div>
-                            <a class="code" href="https://github.com/vsmidhun21/DrowsinessDetectionAndAlertingSystem" target="_blank">View Code</a>
-                        </div>
-                    </div>
-                    <!--cards -->
-
-                    <!--cards -->
-                    <div class="card reveal">
-                        <div class="image">
-                            <img src="./img/DA.jpg">
-                        </div>
-                        <div class="title">
-                            <h1>Desktop Application</h1>
-                        </div>
-                        <div class="des">
-                            <p>A windows application to manage the work of the staff’s in the company by using Python Tkinter and SQL.</p>
-                            <div class="tech">
-                                <img alt="Python logo" class="skill-icon" src="./img/logos/python.png"/>
-                                <span>
-                                Python
-                                </span>
-                            </div>
-                            <div class="tech">
-                                <img alt="Python logo" class="skill-icon" src="./img/logos/mssql.png"/>
-                                <span>
-                                MS SQL Server
-                                </span>
-                            </div>
-                            <a class="code" href="https://github.com/vsmidhun21/ApplicationToMonitorStaffsWork" target="_blank">View Code</a>
-                        </div>
-                    </div>
-                    <!--cards -->
-                    
-                    <!--cards -->
-                    <div class="card reveal">
-                        <div class="image">
-                            <img src="./img/LD.jpg">
-                        </div>
-                        <div class="title">
-                            <h1>Leaf Disease Detection</h1>
-                        </div>
-                        <div class="des">
-                            <p>The leaf image is taken and detect the disease in the leaf using openCV and python.  </p>
-                            <div class="tech">
-                                <img alt="Python logo" class="skill-icon" src="./img/logos/python.png"/>
-                                <span>
-                                Python
-                                </span>
-                            </div>
-                            <div class="tech">
-                                <img alt="Python logo" class="skill-icon" src="./img/logos/opencv.png"/>
-                                <span>
-                                OpenCV
-                                </span>
-                            </div>
-                            <a class="code" href="https://github.com/vsmidhun21/Leaf-Disease-Detection" target="_blank">View Code</a>
-                        </div>
-                        
-                    </div>
-                    <!--cards -->
-
-                    <!--cards -->
-                    <div class="card reveal">
-                        <div class="image">
-                            <img src="./img/CBD.jpg">
-                        </div>
-                        <div class="title">
-                            <h1>Cement Bag Automation</h1>
-                        </div>
-                        <div class="des">
-                            <p>The cement bag is detected from the live camera and count will be stored in the database with timestamp. </p>
-                            <div class="tech">
-                                <img alt="ReactJS logo" class="skill-icon" src="./img/logos/python.png"/>
-                                <span>
-                                Python
-                                </span>
-                            </div>
-                            
-                            <div class="tech">
-                                <img alt="MongoDB logo" class="skill-icon" src="./img/logos/yolo.png"/>
-                                <span>
-                                Ultralytics
-                                </span>
-                            </div>
-                            <a class="code" href="https://github.com/vsmidhun21/CementBag" target="_blank">View Code</a>
-                        </div>
-                    </div>
-                    <!--cards -->
-                    
-                    </center>
+            <div class="featured-projects-box">
+                <h2>My <span>Projects</span></h2>
+                <div class="separator">
                 </div>
+
+                <!--==================Project #1======================-->
+                <div class="project project1">
+                    <div class="project-details-box">
+                        <div class="project-main-info">
+                            <span>Project #1</span>
+                            <h3>Drowsiness Detection</h3>
+                            <p>
+                                The face of the driver is captured and right && left eyes are detected.
+                                If eye is closed the source value will be incremented.
+                                When the value reaches 4 or more the alarm sound will be played.
+                                Those score value will be send to the cloud simultaneously.
+                            </p>
+
+                            <div class="project-icons">
+                                <a href="https://github.com/vsmidhun21/DrowsinessDetectionAndAlertingSystem", target="_blank"><i class='bx bxl-github'></i></a>
+                                <a href="https://github.com/vsmidhun21", target="_blank"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+            
+                        <div class="project-tools">
+                            <p>Python, OpenCV, IBM Cloud</p>
+                        </div>
+                    </div>
+            
+                    <div class="project-image-box">
+                        <a href="https://github.com/vsmidhun21/DrowsinessDetectionAndAlertingSystem", target="_blank", class="project-img-link">
+                            <img src="./img/DD.jpg" alt="Project Preview Image" />
+                        </a>
+                    </div>
+                </div>
+
+                <!--===============Project #2=============-->
+                <div class="project project2">
+                    <div class="project-details-box">
+                        <div class="project-main-info">
+                            <span>Project #2</span>
+                            <h3>Desktop Application</h3>
+                            <p>
+                                A windows application to manage the work of the staff’s in the company.
+                                The application will get the details of the work progress of the employee and store in the database.
+                                Also the manager can generate report from those data easily using the application.
+                            </p>
+
+                            <div class="project-icons">
+                                <a href="https://github.com/vsmidhun21/ApplicationToMonitorStaffsWork", target="_blank"><i class='bx bxl-github'></i></a>
+                                <a href="https://github.com/vsmidhun21", target="_blank"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+            
+                        <div class="project-tools">
+                            <p>Python, Tkinter, MS SQL Server</p>
+                        </div>
+                    </div>
+            
+                    <div class="project-image-box">
+                        <a href="https://github.com/vsmidhun21/ApplicationToMonitorStaffsWork", target="_blank", class="project-img-link">
+                            <img src="./img/DA.jpg" alt="Project Preview Image" />
+                        </a>
+                    </div>
+                </div>
+
+                <!--===========================Project #3==================-->
+                <div class="project project1">
+                    <div class="project-details-box">
+                        <div class="project-main-info">
+                            <span>Project #3</span>
+                            <h3>Leaf Disease Detection</h3>
+                            <p>
+                                The program will get leaf image as input.
+                                By analyzing the color, holes etc. the disease of the leaf is identified.
+                                After analyzing if there is any disease is spotted then the name of the disease is displayed.
+                                If no disease found then "Healthy Leaf" will be displayed as output.
+                            </p>
+
+                            <div class="project-icons">
+                                <a href="https://github.com/vsmidhun21/Leaf-Disease-Detection", target="_blank"><i class='bx bxl-github'></i></a>
+                                <a href="https://github.com/vsmidhun21", target="_blank"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+            
+                        <div class="project-tools">
+                            <p>Python, OpenCV, Tkinter</p>
+                        </div>
+                    </div>
+            
+                    <div class="project-image-box">
+                        <a href="https://github.com/vsmidhun21/Leaf-Disease-Detection", target="_blank", class="project-img-link">
+                            <img src="./img/LD.jpg" alt="Project Preview Image" />
+                        </a>
+                    </div>
+                </div>
+
+                <!--===============Project #4=============-->
+                <div class="project project2">
+                    <div class="project-details-box">
+                        <div class="project-main-info">
+                            <span>Project #4</span>
+                            <h3>Cement Bag Automation</h3>
+                            <p>
+                                The program gets input from the live camera and convert to separate frames.
+                                The frames will detect the cement bag in the conveyor.
+                                When the cement bags cross a point then the count of the cement bag is incremented and the data will be stored in the database with exact datetime.
+                            </p>
+
+                            <div class="project-icons">
+                                <a href="https://github.com/vsmidhun21/CementBag", target="_blank"><i class='bx bxl-github'></i></a>
+                                <a href="https://github.com/vsmidhun21", target="_blank"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+            
+                        <div class="project-tools">
+                            <p>Python, OpenCV, YOLO, SQL</p>
+                        </div>
+                    </div>
+            
+                    <div class="project-image-box">
+                        <a href="https://github.com/vsmidhun21/CementBag", target="_blank", class="project-img-link">
+                            <img src="./img/CBD.jpg" alt="Project Preview Image" />
+                        </a>
+                    </div>
+                </div>
+
+                <!--===============Project #5=============-->
+                <div class="project project2">
+                    <div class="project-details-box">
+                        <div class="project-main-info">
+                            <span>Project #5</span>
+                            <h3>Retail E-commerce</h3>
+                            <p>
+                                I have developed a retail e-commerce platform using Python full stack technologies.
+                                The project aims to create a robust and user-friendly online shopping experience,
+                                incorporating features such as product catalog management, user authentication and shopping cart functionality.
+                            </p>
+
+                            <div class="project-icons">
+                                <a href="https://github.com/vsmidhun21/Ecommerce-Project", target="_blank"><i class='bx bxl-github'></i></a>
+                                <a href="https://github.com/vsmidhun21", target="_blank"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+            
+                        <div class="project-tools">
+                            <p>Python, Django, HTML, CSS</p>
+                        </div>
+                    </div>
+            
+                    <div class="project-image-box">
+                        <a href="https://github.com/vsmidhun21/Ecommerce-Project", target="_blank", class="project-img-link">
+                            <img src="./img/DA.jpg" alt="Project Preview Image" />
+                        </a>
+                    </div>
+                </div>
+
+                <!--===============Project #6=============-->
+                <div class="project project2">
+                    <div class="project-details-box">
+                        <div class="project-main-info">
+                            <span>Project #6</span>
+                            <h3>Floor Cleaning Robot</h3>
+                            <p>
+                                Did a Floor Cleaning Robot that can be controlled using an Android application using Voice inputs.
+                                The Robot can be controlled manually by providing predefined commands.
+                                Also the robot can run autonomously by giving the command as "Auto".
+                                Obstacles are avoided using UV Sensor. 
+                            </p>
+
+                            <div class="project-icons">
+                                <a href="https://github.com/vsmidhun21/Floor-Cleaning-Robot", target="_blank"><i class='bx bxl-github'></i></a>
+                                <a href="https://github.com/vsmidhun21", target="_blank"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+            
+                        <div class="project-tools">
+                            <p>Embedded C, ThingSpeak, MIT App Inventor</p>
+                        </div>
+                    </div>
+            
+                    <div class="project-image-box">
+                        <a href="https://github.com/vsmidhun21/Floor-Cleaning-Robot", target="_blank", class="project-img-link">
+                            <img src="./img/CBD.jpg" alt="Project Preview Image" />
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </section>
+
+
+
+
+
+
         
         <!--   Contact   -->
         <section class="contacts" id="Contact">
