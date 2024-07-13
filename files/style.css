@@ -1241,8 +1241,8 @@ h3 {
 
 @media screen and (min-width: 1024px) {
     #Projects{
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .separator ~ .project {
         position: relative;
@@ -1259,6 +1259,7 @@ h3 {
     }
     .project {
         box-shadow: none;
+        padding-bottom: 30px;
     }
     .project-details-box {
         position: relative;
@@ -1334,6 +1335,8 @@ h3 {
     }
     .project-image-box{
         z-index: 0;
+        max-width: 800px;
+        height: 450px;
     }
     .project-image-box:hover{
         z-index: 10;
