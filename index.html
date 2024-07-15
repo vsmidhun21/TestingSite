@@ -11,7 +11,13 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&amp;display=swap">
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-        
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("vRA0iFDEQ52D4y_UO");
+        })();
+        </script>
+
     </head>
     <body>
         
@@ -439,7 +445,7 @@
 
 
         
-        <!--   Contact   -->
+        <!--   Contact   
         <section class="contacts" id="Contact">
             <div class="contact-text reveal">
                 <h2>Contact <span>Me</span></h2>
@@ -462,7 +468,38 @@
                 </div>
             </div>
             
+        </section> -->
+
+        <section class="contact" id="Contact">
+            <h2>Contact <span>Me</span></h2><center>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3>Contact Me</h3>
+                    <p>Any questions or discussions? Just write me a message!</p>
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Midhun" required>
+                        <input type="email" id="email" placeholder="midhun@mail.com" required>
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                        <button type="submit" onclick="sendmail()">SEND MESSAGE</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Fill up the form and send me your message or contact through below details</p>
+                    <p>+91 8903909217</p>
+                    <p>midhun890390@gmail.com</p>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/midhun-v-s" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://github.com/vsmidhun21" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.youtube.com/@Unlucky_Coder21"><i class='bx bxl-youtube'></i></a>
+                        <a href="https://instagram.com/midhun_021" target="_blank"><i class="bx bxl-instagram"></i></a>
+                    </div>
+                    <button onclick="downloadResume()" class="resume">Resume</button>
+                </div>
+            </div></center>
         </section>
+
+
 
         <a href="#Home" class="top"><i class='bx bx-up-arrow-alt' ></i> </a>
 

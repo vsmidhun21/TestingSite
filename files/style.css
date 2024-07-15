@@ -571,6 +571,9 @@ h3 {
 .project-main-info p {
     font-family: 'Rubik', sans-serif;
     text-align: justify;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 .project-icons a{
     display: inline-flex;
@@ -624,13 +627,98 @@ h3 {
 }
 
 
+/*==============================Contact===========*/
+
+.contact {
+    text-align: center;
+    padding: 50px 0;
+    min-height: 95vh;
+}
+
+.contact h2 {
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+.contact h2 span{
+    color: #0ef;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 30px;
+    background: #1e1e1e;
+    max-width: 1000px;
+    border-radius: 10px;
+    border: 5px solid rgb(83, 90, 91);
+}
+
+.contact-form {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 50%;
+}
+.contact-info{
+    background: #000;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 50%;
+}
+.contact-form h2, .contact-info h2 {
+    margin-top: 0;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+.resume{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
 
 /*contacts*/
-
+/*
 .contacts {
     color: #fff;
     display: grid;
-    /*grid-template-columns: repeat (2, 1fr);*/
+    /*grid-template-columns: repeat (2, 1fr);
     align-items: center;
     gap: 3rem;
     padding: 40px;
@@ -714,7 +802,7 @@ h3 {
     font-weight: 300;
     margin-top: 20%;
 }
-
+*/
 /* Go Top Button */
 .top{
     position: fixed;
