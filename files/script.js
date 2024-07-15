@@ -55,23 +55,3 @@ document.addEventListener('DOMContentLoaded', function () {
     checkScroll();
     window.addEventListener('scroll', checkScroll);
 });
-
-/*======================Contact Form==============*/
-function sendmail(){
-    
-    values = {
-        from_name : document.getElementById('name').value,
-        from_email : document.getElementById('email').value,
-        message : document.getElementById('message').value,
-    }
-    console.log(values);
-
-    // Use EmailJS to send the email
-    emailjs.send("service_493ccff", "template_z2c1rlc", values).then(function(response) {
-        alert('Message sent successfully!');
-    }, function(error) {
-        alert('Failed to send the message, please try again later.');
-    });
-}
-
-
