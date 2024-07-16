@@ -12,7 +12,7 @@
 
 body {
     color: white;
-    background-color: #2B2E3B;
+    background: rgb(34, 40, 49);
 }
 
 ::-webkit-scrollbar{
@@ -85,7 +85,7 @@ body {
     text-decoration: underline;
 }
 
-/*home*/
+/*======================home=================*/
 
 .home {
     position: relative;
@@ -457,7 +457,10 @@ body {
 #Skills{
     background-color: #2b2e3b;
     color: #fff;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: max-content;
 }
 .subtitle {
     text-align: center;
@@ -466,58 +469,50 @@ body {
     padding-top: 70px;
     
 }
-.cards{
-    width: 400px;
-    height: 300px;
-    min-width: 200px;
-    display: inline-block;
-    box-shadow: 2px 2px 20px #0ef;
-    border-radius: 5px; 
-    border: 5px solid #0ef;
-    margin: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    
-}
-.cards .des{
-    padding: 0px;
-}
-.titles{    
-    text-align: center;
-    padding: 10px;
-}
-
-.cards .titles h1{
-    font-size: 40px;
-}
 .subtitle span {
     color: #0ef;
 }
-.skill-card {
-    background-color: #161B22;
-    border: 5px solid #0ef;
-}
-.skill-icon {
-    width: 24px;
-    height: 24px;
-    padding-right: 5px;
-}
-.techs{
-    font-size: 20px;
-    display: inline-flex;
+.skills-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
     
-    padding: 5px;
-    border: 2px solid #fff;
-    width: fit-content;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-top: 20px;
+}
+.skill-box {
+    background-color: #1a1d25;
+    border-radius: 8px;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
 }
 
+.skill-box img {
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+.skill-box p {
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
 
 /*projects*/
 /*================== PROJECTS SECTION STYLING ===========*/
-#Projects{
+
+
+.prj{
     padding-top: 6rem;
 }
 .featured-projects-box h2{
@@ -873,6 +868,7 @@ h3 {
     .navbar a {
         margin: 15px 0;
     }
+    
     /*================timeline responsive====*/
     .timeline{
         margin: 50px auto;
@@ -935,7 +931,8 @@ h3 {
     .home{
         align-items: normal;
         padding-top: 30%;
-        padding-bottom: 0;
+        padding-bottom: 40px;
+        margin-top: 10px;
     }
     .home-content h1 {
         font-size: 35px;
@@ -961,7 +958,7 @@ h3 {
         position: relative;
         left: -10%;
         top: 2%;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
         padding-left: 0;
         margin-left: 0;
     }
@@ -991,23 +988,22 @@ h3 {
 
     /*===================skills==============*/
     .subtitle{
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
+        letter-spacing: 5px;
     }
-    .cards{
-        width: 300px;
-        height: fit-content;
-        min-width: 200px;
-        margin: 20px;
+    .skill-box p{
+        font-size: 19px;
+    }
+    .skills-container {
         margin-left: 5%;
         margin-right: 5%;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
-    .cards .des{
-        padding-bottom: 10px;
-    }
-    .cards .titles{
-        padding-bottom: 0px;
-        font-size: 25px;
+    
+    .skill-box img{
+        max-width: 30px;
+        padding-bottom: 5px;
     }
 
     /*==========================project==============*/
@@ -1066,7 +1062,7 @@ h3 {
         left: -15px;
     }
 }
-
+/*==============My mob========*/
 @media (max-width: 400px) {
     
     .menu-icon {
@@ -1076,12 +1072,12 @@ h3 {
     .navbar {
         display: none;
         flex-direction: column;
-        width: 100%;
-        background: hsl(228, 15%, 20%);
+        width: 40%;
+        background: black;
         position: absolute;
-        top: 70px;
-        left: 0;
-        box-shadow: 0 .1rem 1rem #000;
+        top: 90px;
+        right: 0;
+        transition: 0.5s;
         padding: 20px 0;
     }
 
@@ -1098,7 +1094,8 @@ h3 {
         width: 100%;
         align-items: normal;
         padding-top: 35%;
-        padding-bottom: 0;
+        padding-bottom: 25;
+        margin-top: 20px;
     }
     .home-content h1 {
         font-size: 25px;
@@ -1111,12 +1108,12 @@ h3 {
     }
     
     .home-content h4 {
-        font-size: 10px;
+        font-size: 20px;
         font-weight: 200;
     }
     
     .home-content h4 span {
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 200;
     }
     .btn-box:hover {
@@ -1126,11 +1123,14 @@ h3 {
         max-width: 300px;
         position: relative;
         left: -10%;
-        top: 2%;
+        top: 3.5%;
         padding-bottom: 30px;
         padding-left: 0;
         margin-left: 0;
         margin-right: 0;
+    }
+    .btn-box{
+        margin-top: 5%;
     }
     
     /*about*/
@@ -1156,39 +1156,54 @@ h3 {
 
     /*skills*/
     .subtitle{
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
+        letter-spacing: 5px;
     }
-    .cards{
-        width: auto;
-        height: fit-content;
-        min-width: 200px;
-        margin: 20px;
+    .skill-box p{
+        font-size: 19px;
+    }
+    .skills-container {
         margin-left: 5%;
         margin-right: 5%;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
-    .cards .des{
-        padding-bottom: 10px;
+    .skill-box{
+        display:block;
     }
-    .cards .titles{
-        padding-bottom: 0px;
-        font-size: 25px;
+    .skill-box img{
+        max-width: 30px;
+        padding-bottom: 5px;
     }
 
     /*==========================project==============*/
+    .prj{
+        padding-bottom: 35px;
+    }
     .project{
         max-width: 20rem;
     }
+    .featured-projects-box h2{
+        font-size: 40px;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    .project-main-info h3{
+        font-size: 25px;
+    }
+    
 
-    /*contact*/
+    /*======contact======*/
     .contacts h2{
-        font-size: 50px;
+        font-size: 40px;
+        text-align: center;
+        letter-spacing: 5px;
     }
     .contact-list i{
         font-size: 13px;
         padding: 5px 5px 0 0;
     }
-    
+    /*======GO TO TOP======*/
     .top{
         position: fixed;
         bottom: 2rem;
@@ -1239,9 +1254,10 @@ h3 {
 
 
 @media screen and (min-width: 1024px) {
-    #Projects{
+    .featured-projects-box{
         margin-left: 10%;
         margin-right: 10%;
+        padding-bottom: 30px;
     }
     .separator ~ .project {
         position: relative;
@@ -1287,10 +1303,13 @@ h3 {
     }
     .project-img-link > img {
         border-radius: 1.2rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        transition: transform 0.2s, box-shadow 0.2s;
     }
 
     .project-img-link > img:hover {
         transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     }
 
 
@@ -1340,22 +1359,47 @@ h3 {
         bottom: 0;
         align-self: stretch;
     }
+    
 }
 @media screen and (min-width:1400px){
-    #Projects{
+    .featured-projects-box{
         margin-left: 15%;
         margin-right: 15%;
     }
+    
+    .skill-box p{
+        padding-left: 25px;
+    }
 }
 @media screen and (min-width:1700px){
-    #Projects{
+    .featured-projects-box{
         margin-left: 20%;
         margin-right: 20%;
     }
 }
 @media screen and (min-width:2150px){
-    #Projects{
-        margin-left: 25%;
-        margin-right: 25%;
+    /*=====Project====*/
+    .featured-projects-box{
+        margin-left: 26%;
+        margin-right: 26%;
+        padding-bottom: 100px;
+    }
+    .project .project-image-box {
+        max-width: auto;
+        height: 400px;
+    }
+    /*=====Skills====*/
+    .skills-container{
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+    .skill-box{
+        font-size: 35px;
+        padding: 40px;
+    }
+    .skill-box img{
+        max-width: 60px;
+    }
+    .skill-box p{
+        padding-left: 25px;
     }
 }
