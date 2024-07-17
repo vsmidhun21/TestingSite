@@ -127,8 +127,10 @@ body {
 }
 
 .home-content h4 {
+    position: relative;
     font-size: 32px;
     font-weight: 700;
+    z-index: 10;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
@@ -202,6 +204,7 @@ body {
     opacity: 0;
     animation: slideUP 1s ease forwards;
     animation-delay: 1s;
+    z-index: 0;
 }
 
 .responsive {
@@ -845,10 +848,10 @@ h3 {
 /*===================================Responsive My Phone===============*/
 
 @media (max-width: 900px) and (min-width: 700px) {
+    /*========Navbar======*/
     .menu-icon {
         display: block;
     }
-
     .navbar {
         display: none;
         flex-direction: column;
@@ -867,6 +870,87 @@ h3 {
 
     .navbar a {
         margin: 15px 0;
+    }
+
+    /*=========Home=========*/
+    .home{
+        align-items: normal;
+        padding-top: 14%;
+        padding-bottom: 40px;
+        margin-top: 10px;
+    }
+    .home-content h1 {
+        font-size: 45px;
+        font-weight: 600;
+    }
+    
+    .home-content h3 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+    
+    .home-content h4 {
+        font-size: 30px;
+        font-weight: 200;
+    }
+    
+    .home-content h4 span {
+        font-size: 30px;
+        font-weight: 200;
+    }
+    .img{
+        max-width: 400px;
+        position: relative;
+        left: -10%;
+        top: 0%;
+    }
+    .home-sci a{
+        margin-top: 0px;
+        padding-top: 0%;
+    }
+
+    /*========About====*/
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center; 
+    }
+
+    .about-img {
+        order: 2;
+        margin-top: 0%;
+        padding-right: 0; 
+        justify-self: center;
+    }
+
+    .about-text {
+        order: 1; 
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .about-text h2 {
+        text-align: center;
+        font-size: 60px;
+        letter-spacing: 5px;
+        padding-bottom: 10px;
+    }
+
+    .abtbtn-box {
+        margin-top: 10px;
+        max-width: max-content;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .about-text p {
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: 0px;
+        margin-bottom: 1rem;
+        text-align: justify;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
     }
     
     /*================timeline responsive====*/
@@ -966,24 +1050,47 @@ h3 {
         box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
     }
     /*=============about================*/
-    .about{
-        padding-bottom: 20px;
-        min-height: auto;
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center; 
     }
+
+    .about-img {
+        order: 2;
+        margin-top: 0%;
+        padding-right: 0; 
+        justify-self: center;
+    }
+
+    .about-text {
+        order: 1; 
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
     .about-text h2 {
+        text-align: center;
         font-size: 30px;
         letter-spacing: 5px;
+        padding-bottom: 10px;
     }
-    
+
+    .abtbtn-box {
+        margin-top: 10px;
+        max-width: max-content;
+        display: block;
+        margin: 0 auto;
+    }
+
     .about-text p {
-        font-size: 15px;
+        font-size: 18px;
         line-height: normal;
-        letter-spacing: 1px;
-        margin-bottom: 4rem;
-        text-align: left;
-    }
-    .abtbtn-box:hover {
-        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
+        letter-spacing: 0px;
+        margin-bottom: 1rem;
+        text-align: justify;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
     }
 
     /*===================skills==============*/
@@ -1009,6 +1116,9 @@ h3 {
     /*==========================project==============*/
     .project{
         max-width: 25rem;
+    }
+    .prj{
+        padding-bottom: 30px;
     }
     /*===================contact====================*/
     .contacts h2{
@@ -1108,7 +1218,7 @@ h3 {
     }
     
     .home-content h4 {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 200;
     }
     
@@ -1134,25 +1244,48 @@ h3 {
     }
     
     /*about*/
-    .about{
-        padding-bottom: 20px;
-        min-height: auto;
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center; 
     }
+
+    .about-img {
+        order: 2;
+        margin-top: 0%;
+        padding-right: 0; 
+        justify-self: center;
+    }
+
+    .about-text {
+        order: 1; 
+        
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
     .about-text h2 {
+        text-align: center;
         font-size: 30px;
         letter-spacing: 5px;
+        padding-bottom: 10px;
     }
-    
+
+    .abtbtn-box {
+        margin-top: 10px;
+    }
+
     .about-text p {
-        font-size: 15px;
+        font-size: 18px;
         line-height: normal;
         letter-spacing: 0px;
-        margin-bottom: 4rem;
-        text-align: left;
+        margin-bottom: 1rem;
+        text-align: justify;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
     }
-    .abtbtn-box:hover {
-        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
-    }
+    
+    
 
     /*skills*/
     .subtitle{
