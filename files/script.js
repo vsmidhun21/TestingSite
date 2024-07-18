@@ -1,3 +1,16 @@
+/*=========Navbar Scroll===========*/
+document.addEventListener("DOMContentLoaded", function() {
+    const navbar = document.getElementById("header");
+    window.addEventListener("scroll", function() {
+      if (window.scrollY > 50) { // Adjust the value to your preference
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+    });
+});
+
+
 /*========== scroll sections active link in navbar ==========*/
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
