@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Agustina';
-    src: url('../Agustina.woff') format('woff');
+    src: url('./Agustina.woff') format('woff');
 }
 * {
     margin: 0;
@@ -1342,7 +1342,7 @@ h3 {
         display: block;
         margin: 0 auto;
     }
-    
+
     .about-text p {
         font-size: 18px;
         line-height: normal;
