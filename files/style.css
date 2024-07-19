@@ -12,7 +12,7 @@
 
 body {
     color: white;
-    background: rgb(34, 40, 49);
+    background:#2b2e3b;
 }
 
 ::-webkit-scrollbar{
@@ -331,7 +331,12 @@ body {
 
 /*========================Timeline====================*/
 .acc-sec{
-    padding-top: 10%;
+    padding-top: 7%;
+}
+.hed{
+    font-weight: 600;
+    font-size: large;
+    letter-spacing: 2.5px;
 }
 .acc-sec h1{
     font-size: 60px;
@@ -404,6 +409,9 @@ body {
     position: relative;
     border-radius: 6px;
     font-size: 15px;
+}
+.text-box h2{
+    font-size: medium;
 }
 .text-box p{
     text-align: justify;
@@ -546,6 +554,7 @@ body {
 
 .prj{
     padding-top: 6rem;
+    background-color: rgb(34, 40, 49) ;
 }
 .featured-projects-box h2{
     font-size: 60px;
@@ -1417,6 +1426,9 @@ h3 {
     }
     .acc-sec h1{
         font-size: 30px;
+    }
+    .hed{
+        letter-spacing: 1px;
     }
     .timeline-container{
         margin-left: 2.5%;
