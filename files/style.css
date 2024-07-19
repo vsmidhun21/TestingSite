@@ -1338,8 +1338,11 @@ h3 {
 
     .abtbtn-box {
         margin-top: 10px;
+        max-width: max-content;
+        display: block;
+        margin: 0 auto;
     }
-
+    
     .about-text p {
         font-size: 18px;
         line-height: normal;
