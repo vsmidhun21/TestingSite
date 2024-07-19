@@ -330,19 +330,44 @@ body {
 }
 
 /*========================Timeline====================*/
-
+.acc-sec{
+    padding-top: 10%;
+}
+.acc-sec h1{
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+.acc-sec h1 span{
+    color: #0ef;
+}
+.exp-sec{
+    padding-top: 5%;
+}
+.exp-sec h1{
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+.exp-sec h1 span{
+    color: #0ef;
+}
 .timeline{
     position: relative;
-    width: 48%;
-    margin: 50px 1%;
+    width: 100%;
+    margin: 20px 1%;
 }
 .timeline-container {
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    box-sizing: border-box;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .containerTline{
-    padding: 10px 30px;
+    padding: 10px 50px;
     position: relative;
     width: 50%;
     animation: movedown 1s linear forwards;
@@ -373,14 +398,15 @@ body {
 }
 
 .text-box{
-    padding: 20px;
+    padding: 20px 30px;
     background-color: #fff;
     color: #000;
     position: relative;
     border-radius: 6px;
     font-size: 15px;
-    min-width: 100px;
-    max-width: 300px;
+}
+.text-box p{
+    text-align: justify;
 }
 .left-container{
     left: 0;
@@ -409,6 +435,7 @@ body {
     margin-left: -3px;
     z-index: -1;
     background-color: #fff;
+    border-radius: 5px;
     animation: moveline 3s linear forwards;
 }
 .internships::after {
@@ -421,6 +448,7 @@ body {
     margin-left: -3px;
     z-index: -1;
     background-color: #fff;
+    border-radius: 5px;
     animation: moveline 3s linear forwards;
 }
 @keyframes moveline {
@@ -955,6 +983,15 @@ h3 {
     }
     
     /*================timeline responsive====*/
+    .acc-sec{
+        padding-top: 15%;
+    }
+    .acc-sec h1{
+        font-size: 50px;
+    }
+    .exp-sec h1{
+        font-size: 50px;
+    }
     .timeline{
         margin: 50px auto;
     }
@@ -1144,6 +1181,19 @@ h3 {
         transition: all .4s;
     }
     /*================timeline responsive====*/
+    .timeline-container{
+        margin-left: 5%;
+        margin-right: 5%
+    }
+    .acc-sec{
+        padding-top: 20%;
+    }
+    .acc-sec h1{
+        font-size: 40px;
+    }
+    .exp-sec h1{
+        font-size: 40px;
+    }
     .timeline{
         margin: 50px auto;
     }
@@ -1157,6 +1207,12 @@ h3 {
     }
     .text-box{
         font-size: 13px;
+    }
+    .text-box p{
+        text-align: justify;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
     }
     .text-box small{
         font-size: 10px;
@@ -1353,6 +1409,19 @@ h3 {
         color: #000;
     }
     /*================timeline responsive====*/
+    .acc-sec{
+        padding-top: 30%;
+    }
+    .exp-sec h1{
+        font-size: 30px;
+    }
+    .acc-sec h1{
+        font-size: 30px;
+    }
+    .timeline-container{
+        margin-left: 2.5%;
+        margin-right: 2.5%
+    }
     .timeline{
         margin: 50px auto;
     }
@@ -1366,6 +1435,12 @@ h3 {
     }
     .text-box{
         font-size: 13px;
+    }
+    .text-box p{
+        text-align: justify;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
     }
     .text-box small{
         font-size: 10px;
